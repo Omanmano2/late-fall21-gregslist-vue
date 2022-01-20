@@ -47,7 +47,7 @@ export default {
   setup() {
     return {
       account: computed(() => AppState.account),
-      async login() {
+      login() {
         AuthService.loginWithRedirect()
       },
       async logout() {
